@@ -21,7 +21,7 @@ allprojects {
 ##### Step 2. Add the dependency
 ```bat
 dependencies {
-    implementation 'com.github.javaherisaber:FloatingOverlayView:1.0.0'
+    implementation 'com.github.javaherisaber:FloatingOverlayView:1.0.1'
 }
 ```
 
