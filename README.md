@@ -5,29 +5,30 @@ Floating view with draw over other apps
 
 ## Demo
 <div style="dispaly:flex">
-    <img src="/demo.gif" width="24%">
+    <img src="/demo.gif" width="30%">
 </div>
 
 ## Build
 ##### Step 1. Add the JitPack repository to your build file
-```build
+```bat
 allprojects {
     repositories {
         maven { url "https://jitpack.io" }
     }
 }
 ```
+
 ##### Step 2. Add the dependency
-```build
+```bat
 dependencies {
-    implementation 'com.buildtoapp.floatingoverlayview:FloatingOverlayView:1.0.0'
+    implementation 'com.github.javaherisaber:FloatingOverlayView:1.0.0'
 }
 ```
 
 ## Usage
 ### Layout.xml
 ##### Step 1. Create layout and don't forget add id (root_container) like this
-```layout
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -44,16 +45,17 @@ dependencies {
 
 </FrameLayout>
 ```
+
 ### Kotlin/Java
 ##### Step 2. Create FloatingOverlayView
 ```kotlin
 FloatingOverlayView(context, R.layout.view_overlay)
-    .setXOffset(800)
+    .setXOffset(800) // move the banner to the right side
     .setOnCreateListener { layout: FloatingOverlayView, view: View ->
-        
+        // do something with `view`, maybe a close button
     }
     .setOnCloseListener {
-        
+        // do something after the banner is closed
     }
     .create()
 ```
