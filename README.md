@@ -1,2 +1,59 @@
 # FloatingOverlayView
 Floating view with draw over other apps
+
+[![](https://jitpack.io/v/javaherisaber/FloatingOverlayView.svg)](https://jitpack.io/#javaherisaber/FloatingOverlayView)
+
+## Demo
+<div style="dispaly:flex">
+    <img src="/demo.gif" width="24%">
+</div>
+
+## Build
+##### Step 1. Add the JitPack repository to your build file
+```build
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+```
+##### Step 2. Add the dependency
+```build
+dependencies {
+    implementation 'com.buildtoapp.floatingoverlayview:FloatingOverlayView:1.0.0'
+}
+```
+
+## Usage
+### Layout.xml
+##### Step 1. Create layout and don't forget add id (root_container) like this
+```layout
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/root_container"
+        android:layout_width="250dp"
+        android:layout_height="200dp">
+
+        ....
+
+    </FrameLayout>
+
+</FrameLayout>
+```
+### Kotlin/Java
+##### Step 2. Create FloatingOverlayView
+```kotlin
+FloatingOverlayView(context, R.layout.view_overlay)
+    .setXOffset(800)
+    .setOnCreateListener { layout: FloatingOverlayView, view: View ->
+        
+    }
+    .setOnCloseListener {
+        
+    }
+    .create()
+```
