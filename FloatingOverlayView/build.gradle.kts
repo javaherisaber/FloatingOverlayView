@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.buildtoapp.floatingoverlayview"
-    compileSdk = 29
+    compileSdk = 30
 
     defaultConfig {
         minSdk = 19
@@ -19,11 +19,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
 }
 
