@@ -2,6 +2,7 @@
 Floating view with draw over other apps
 
 [![](https://jitpack.io/v/javaherisaber/FloatingOverlayView.svg)](https://jitpack.io/#javaherisaber/FloatingOverlayView)
+[![Download](https://img.shields.io/badge/Android%20Arsenal-FloatingOverlayView-green.svg)](https://android-arsenal.com/details/1/8458)
 
 ## Demo
 <div style="dispaly:flex">
