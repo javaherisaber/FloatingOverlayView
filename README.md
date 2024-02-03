@@ -1,5 +1,6 @@
 # FloatingOverlayView
-Floating view with draw over other apps
+Floating view with draw over other apps 
+it uses system alert window with the permission `android.permission.SYSTEM_ALERT_WINDOW` under the hood
 
 [![](https://jitpack.io/v/javaherisaber/FloatingOverlayView.svg)](https://jitpack.io/#javaherisaber/FloatingOverlayView)
 [![Download](https://img.shields.io/badge/Android%20Arsenal-FloatingOverlayView-green.svg)](https://android-arsenal.com/details/1/8458)
